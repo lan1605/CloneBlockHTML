@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block liên hệ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+      }
+      .contact {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: #f1f2f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        border-top: 0.5px solid #ced6e0;
+      }
+
+      .contact-item {
+        width: calc(100% / 3);
+        font-weight: 300;
+        height: 50px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .contact-item:first-child {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+      .contact-item--advise,
+      .contact-item--shop {
+        width: calc(100% / 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        text-decoration: none;
+      }
+      .contact-img {
+        width: 20px;
+        height: 20px;
+      }
+      .contact-link {
+        text-align: center;
+        font-weight: 500;
+        line-height: 50px;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-desc {
+        color: #777;
+        font-weight: 400;
+        font-size: 0.6rem;
+        margin-top: 4px;
+        text-decoration: none;
+      }
+      .contact-item--shop {
+        border-left: 0.5px solid #ced6e0;
+      }
+      .red {
+        background-color: #e00030;
+      }
+      .blue {
+        background-color: #3580d8;
+      }
+      .payment {
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0px -1px 1px 1px #f1f2f6;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .price {
+        margin-left: 20px;
+        color: #e00030;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .sub-text {
+        margin-left: 20px;
+        font-size: 0.75em;
+        color: #888;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact">
+      <div class="payment">
+        <p class="price">1.590.000 ₫</p>
+        <p class="sub-text">Đã bao gồm thuế VAT</p>
+      </div>
+      <div class="contact-menu">
+        <div class="contact-item">
+          <a href="" class="contact-item--advise">
+            <img
+              class="contact-img"
+              src="./assets/images/customer-service.svg"
+              alt=""
+            />
+            <p class="contact-desc">Tư vấn</p>
+          </a>
+          <a href="" class="contact-item--shop">
+            <img class="contact-img" src="./assets/images/store.svg" alt="" />
+            <p class="contact-desc">Cửa hàng</p>
+          </a>
+        </div>
+        <a href="" class="contact-item blue">
+          <p class="contact-link">Trả góp</p>
+        </a>
+        <a href="" class="contact-item red">
+          <p class="contact-link">Mua ngay</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
